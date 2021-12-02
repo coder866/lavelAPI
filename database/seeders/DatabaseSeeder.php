@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\User::factory(1)->create(
             [
                 'name' => 'Bigbugs Inc',
-                'email' => 'bibugs@mail.com',
+                'email' => 'bigbugs@mail.com',
                 'email_verified_at' => null,
             ]
         );
