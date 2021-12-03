@@ -21,6 +21,7 @@ return [
         'logout',
         'register',
         'user/password',
+        'users/auth',
         'forgot-password',
         'reset-password',
         'sanctum/csrf-cookie',

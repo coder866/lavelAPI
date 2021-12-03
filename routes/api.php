@@ -16,9 +16,10 @@ use App\Http\Controllers\AuthController;
 */
 Route::post('/sanctum/token', TokenController::class);
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+Route::middleware('auth:sanctum')->get('/users/auth', function (Request $request) {
     return $request->user();
 });
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('/users/auth', AuthController::class);
+    //Route::post('/register', [AuthController::class,'register']);
 });
