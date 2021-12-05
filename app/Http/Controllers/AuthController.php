@@ -12,8 +12,4 @@ class AuthController extends Controller
     {
         return new UserResource(Auth::user());
     }
-    public function register(Request $request)
-    {
-    return 'Returnin from api register';
-    }
 }
